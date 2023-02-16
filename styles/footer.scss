@@ -1,0 +1,13 @@
+@import "variables";
+
+footer {
+  background-color: $footer-bg-color;
+  color: black;
+  font-family: $p-font;
+  font-weight: $p-bold;
+  font-size: 17px;
+}
+
+a {
+  color: black;
+}

@@ -1,0 +1,202 @@
+/* Navbar Font */
+/* Navbar Font */
+/* Navbar Font */
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: black; }
+
+.section-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-weight: 55px;
+  color: white; }
+
+.h0 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: white; }
+
+.h1 {
+  font-family: "Inter", sans-serif;
+  color: #e5c300;
+  font-weight: 700; }
+
+.h4 {
+  font-family: "Barlow", sans-serif;
+  color: white;
+  font-weight: 700; }
+
+.h5 {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 700; }
+
+.p {
+  color: white;
+  font-size: 17px;
+  line-height: 2; }
+
+main {
+  background: url("/assets/images/background/2021-02-16-upscaled.jpg"), linear-gradient(140deg, #101010, #343c19, #676d20, #9d9f13);
+  background-blend-mode: soft-light !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  min-height: 100vh; }
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
+
+.accordion {
+  --bs-accordion-bg: #101010;
+  --bs-accordion-active-bg: #101010;
+  --bs-accordion-active-color: #e5c300;
+  --bs-accordion-btn-color: white; }
+
+.accordion-item {
+  color: white; }
+
+.accordion-button {
+  font-size: 20;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700; }
+
+.accordion-button:after {
+  color: white !important;
+  content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"); }
+
+.btn {
+  font-weight: 700;
+  font-size: 20px;
+  --bs-btn-border-radius: 0.3rem; }
+
+hr {
+  border-top: 2px solid white; }
+
+.p-font {
+  font-family: "Barlow", sans-serif; }
+
+.s-font {
+  font-family: "Inter", sans-serif; }
+
+table {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  table-layout: fixed;
+  color: white;
+  text-align: center;
+  font-family: "Barlow", sans-serif; }
+
+tr:nth-child(odd) {
+  background-color: #464646; }
+
+tr:nth-child(even) {
+  background-color: #393939; }
+
+td,
+th {
+  padding: 10px 0; }
+
+td > span {
+  text-decoration: underline;
+  cursor: pointer; }
+
+.dropdown-toggle {
+  color: white;
+  cursor: pointer; }
+
+.text-justify {
+  text-align: justify; }
+
+.mobile-num {
+  text-decoration: underline; }
+
+.emailTrigger {
+  color: white;
+  cursor: pointer; }
+
+.emailTrigger:hover {
+  color: #e5c300 !important; }
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px; }
+
+.read-more {
+  cursor: pointer;
+  transition: 0.2s; }
+
+.read-more:hover {
+  color: #e5c300 !important; }
+
+#gmap_canvas {
+  width: 100%;
+  height: 500px; }
+
+.carousel-item > img {
+  border-radius: 10px !important; }
+
+.card-title {
+  font-weight: 800; }
+
+.card-text {
+  font-weight: 400; }
+
+[id^="announcementImage"] {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px !important; }
+
+@media only screen and (max-width: 992px) {
+  .h0 {
+    font-size: 45px !important; } }
+@media only screen and (max-width: 576px) {
+  .h0 {
+    font-size: 35px !important; }
+
+  .main-content p {
+    font-size: 2vh !important; }
+
+  .row > * {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
+
+  footer {
+    text-align: center; } }
+/* Navbar Font */
+section#training {
+  background: url("/assets/images/our-guards/security-guards-training-upscaled.jpg"), linear-gradient(140deg, #101010, #343c19, #676d20, #9d9f13);
+  background-blend-mode: soft-light !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important; }
+
+.captioned-photo {
+  background: url("/assets/images/our-guards/security-guards-upscaled.jpg");
+  background-size: cover !important;
+  background-attachment: scroll !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px; }
+  .captioned-photo .captioned-photo-footer {
+    font-weight: 600;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+    background: rgba(229, 195, 0, 0.9);
+    color: #101010;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+/*# sourceMappingURL=our-guards.css.map */

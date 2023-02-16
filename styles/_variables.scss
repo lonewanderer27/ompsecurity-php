@@ -1,0 +1,37 @@
+$p-font: "Barlow", sans-serif;
+$s-font: "Inter", sans-serif;
+
+$p-thin: 100;
+$s-thin: $p-thin;
+$p-extralight: 200;
+$s-extralight: $p-extralight;
+$p-light: 300;
+$s-light: $p-light;
+$p-regular: 400;
+$s-regular: $p-regular;
+$p-medium: 500;
+$s-medium: $p-medium;
+$p-semibold: 600;
+$s-semibold: $p-semibold;
+$p-bold: 700;
+$s-bold: $p-bold;
+$p-extrabold: 800;
+$s-extrabold: $p-extrabold;
+$p-black: 900;
+$s-black: $p-black;
+
+$p-color: #e5c300;
+
+/* Navbar Font */
+$nav-font-size: 20px;
+$nav-link-fill-color: $p-color;
+$nav-link-hover-color: $nav-link-fill-color;
+$nav-link-active-color: $nav-link-fill-color;
+$nav-item-border-radius: 3px;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+$footer-bg-color: #d6b706;
+
+$omp-black: #101010;

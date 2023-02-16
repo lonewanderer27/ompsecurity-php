@@ -1,0 +1,55 @@
+@import "variables";
+
+@mixin title() {
+  font-family: $s-font;
+  font-weight: $s-bold;
+  letter-spacing: 0.3px;
+}
+
+@mixin service_bg() {
+  background-repeat: no-repeat !important;
+  background-blend-mode: soft-light !important;
+  background-size: 100% !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@mixin omp_bg($bg_img_path, $degrees: 140deg, $bg-size: cover) {
+  background: url($bg_img_path),
+    linear-gradient($degrees, $omp-black, #343c19, #676d20, #9d9f13);
+  background-blend-mode: soft-light !important;
+  background-size: $bg-size !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+@mixin plain_bg($bg-color: $omp-black, $bg-size: cover) {
+  background-color: $bg-color !important;
+  background-size: $bg-size !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+@mixin captioned-photo($img_path, $x-size, $y-size, $bg-size: cover) {
+  background: url($img_path);
+  background-size: $bg-size !important;
+  background-attachment: scroll !important;
+  background-repeat: no-repeat !important;
+  width: $x-size;
+  height: $y-size;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  .captioned-photo-footer {
+    font-weight: $s-semibold;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+    background: rgba($p-color, 0.9);
+    color: $omp-black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

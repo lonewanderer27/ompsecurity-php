@@ -1,0 +1,23 @@
+@import "variables";
+@import "globals";
+@import "mixins";
+
+.announcement-title {
+  @include title();
+  text-align: center
+}
+
+main#announcements {
+  @include omp_bg("/assets/images/background/2021-02-16-upscaled.jpg", 140deg);
+}
+
+section#all-announcements {
+  @include omp_bg("/assets/images/announcements/preview.jpg", 180deg);
+}
+
+section#facebook-embeds {
+  @include omp_bg(
+    "/assets/images/announcements/facebook-logo-wallpaper.jpg",
+    180deg
+  );
+}

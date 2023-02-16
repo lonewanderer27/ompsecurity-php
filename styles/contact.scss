@@ -1,0 +1,17 @@
+@import "variables";
+@import "globals";
+@import "mixins";
+
+table {
+  width: 100%;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+tr {
+  background-color: black !important;
+}
+
+.emailTrigger {
+  font-size: 18px;
+}

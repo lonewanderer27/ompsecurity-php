@@ -1,0 +1,19 @@
+@import "variables";
+@import "globals";
+@import "mixins";
+
+section#training {
+  @include omp_bg(
+    "/assets/images/our-guards/security-guards-training-upscaled.jpg",
+    140deg
+  );
+}
+
+.captioned-photo {
+  @include captioned-photo(
+    "/assets/images/our-guards/security-guards-upscaled.jpg",
+    100%,
+    100%,
+    cover
+  );
+}

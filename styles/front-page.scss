@@ -1,0 +1,58 @@
+@import "variables";
+@import "globals";
+@import "mixins";
+
+.main-content {
+  p {
+    font-size: 20px;
+  }
+}
+
+section#recent-announcements {
+  @include omp_bg("/assets/images/announcements/preview.jpg", 160deg);
+}
+
+@for $j from 1 through 4 {
+  #announcementImage#{$j} {
+    border-radius: 10px;
+  }
+}
+
+section#our-services {
+  @include plain_bg(#ac9b02);
+}
+
+.service-title, .announcement-title {
+  @include title();
+  text-align: center;
+}
+
+@for $i from 1 through 6 {
+  #service#{$i} {
+    background: var(--service#{$i}_img_path),
+      linear-gradient(140deg, $omp-black, #343c19, #676d20, #9d9f13);
+    transition: 1s;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    height: 100%;
+    @include service_bg;
+  }
+
+  #service#{$i}:hover {
+    background: var(--service#{$i}_img_path),
+      linear-gradient(140deg, $omp-black, #9d9f13, #676d20, #343c19);
+    @include service_bg;
+  }
+}
+
+section#contact {
+  @include plain_bg();
+}
+
+.main-content {
+  #bigDescription,
+  #smallDescription {
+    text-align: center;
+  }
+}

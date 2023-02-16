@@ -1,0 +1,87 @@
+/* Navbar Font */
+.navbar {
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: whitesmoke;
+}
+.navbar-brand span {
+  font-size: 40px;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #e5c300;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.nav-link,
+.dropdown-item {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.nav-item > .active {
+  background-color: #e5c300;
+}
+
+.nav-item:hover {
+  color: #e5c300;
+}
+
+.nav-item {
+  border-color: #e5c300;
+  border-style: solid;
+  margin: 0 5px;
+  border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 3px 17px;
+  }
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #e5c300;
+}
+
+.dropdown-item {
+  color: black;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #e5c300;
+  color: black;
+}
+
+.dropdown-menu[data-bs-popper] {
+  margin-top: 7px;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-link,
+.dropdown-item {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .navbar-brand img {
+    width: 50px;
+    height: auto;
+  }
+  .navbar-brand span {
+    font-size: 30px !important;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */
