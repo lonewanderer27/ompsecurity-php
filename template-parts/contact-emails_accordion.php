@@ -1,6 +1,6 @@
 <?php $department_emails = get_field("department_emails", 13) ?>
 <div
-     class="mb-md-5 contact-accordion d-block <?= (is_page("hiring") or is_page("contact")) ? "" : "d-md-none" ?>">
+     class="mb-md-5 contact-accordion d-block <?= (is_page("hiring") or is_page("contact") or is_single()) ? "" : "d-md-none" ?>">
   <div class="accordion"
        id="accordionExample">
     <?php $index = 0; ?>

@@ -1,41 +1,55 @@
 /* Navbar Font */
 /* Navbar Font */
 /* Navbar Font */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Barlow", sans-serif;
-  background-color: black; }
+  background-color: black;
+}
 
 .section-title {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-weight: 55px;
-  color: white; }
+  color: white;
+}
 
 .h0 {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-size: 55px;
-  color: white; }
+  color: white;
+}
 
 .h1 {
   font-family: "Inter", sans-serif;
   color: #e5c300;
-  font-weight: 700; }
+  font-weight: 700;
+}
+
+.h3 {
+  font-family: "Inter", sans-serif;
+  color: #e5c300;
+  font-weight: 700;
+}
 
 .h4 {
   font-family: "Barlow", sans-serif;
   color: white;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 .h5 {
   font-family: "Inter", sans-serif;
   color: white;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 .p {
   color: white;
   font-size: 17px;
-  line-height: 2; }
+  line-height: 2;
+}
 
 main {
   background: url("/assets/images/background/2021-02-16-upscaled.jpg"), linear-gradient(140deg, #101010, #343c19, #676d20, #9d9f13);
@@ -44,44 +58,54 @@ main {
   background-attachment: fixed !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 section {
   min-height: 100vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .accordion {
   --bs-accordion-bg: #101010;
   --bs-accordion-active-bg: #101010;
   --bs-accordion-active-color: #e5c300;
-  --bs-accordion-btn-color: white; }
+  --bs-accordion-btn-color: white;
+}
 
 .accordion-item {
-  color: white; }
+  color: white;
+}
 
 .accordion-button {
   font-size: 20;
   font-family: "Barlow", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 .accordion-button:after {
   color: white !important;
-  content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"); }
+  content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
 
 .btn {
   font-weight: 700;
   font-size: 20px;
-  --bs-btn-border-radius: 0.3rem; }
+  --bs-btn-border-radius: 0.3rem;
+}
 
 hr {
-  border-top: 2px solid white; }
+  border-top: 2px solid white;
+}
 
 .p-font {
-  font-family: "Barlow", sans-serif; }
+  font-family: "Barlow", sans-serif;
+}
 
 .s-font {
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+}
 
 table {
   border-width: 2px;
@@ -90,96 +114,119 @@ table {
   table-layout: fixed;
   color: white;
   text-align: center;
-  font-family: "Barlow", sans-serif; }
+  font-family: "Barlow", sans-serif;
+}
 
 tr:nth-child(odd) {
-  background-color: #464646; }
+  background-color: #464646;
+}
 
 tr:nth-child(even) {
-  background-color: #393939; }
+  background-color: #393939;
+}
 
 td,
 th {
-  padding: 10px 0; }
+  padding: 10px 0;
+}
 
 td > span {
   text-decoration: underline;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .dropdown-toggle {
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .text-justify {
-  text-align: justify; }
+  text-align: justify;
+}
 
 .mobile-num {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .emailTrigger {
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .emailTrigger:hover {
-  color: #e5c300 !important; }
+  color: #e5c300 !important;
+}
 
 .carousel-indicators [data-bs-target] {
   border-radius: 50%;
   width: 20px;
-  height: 20px; }
+  height: 20px;
+}
 
 .read-more {
   cursor: pointer;
-  transition: 0.2s; }
+  transition: 0.2s;
+}
 
 .read-more:hover {
-  color: #e5c300 !important; }
+  color: #e5c300 !important;
+}
 
 #gmap_canvas {
   width: 100%;
-  height: 500px; }
+  height: 500px;
+}
 
 .carousel-item > img {
-  border-radius: 10px !important; }
+  border-radius: 10px !important;
+}
 
 .card-title {
-  font-weight: 800; }
+  font-weight: 800;
+}
 
 .card-text {
-  font-weight: 400; }
+  font-weight: 400;
+}
 
-[id^="announcementImage"] {
+[id^=announcementImage] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px !important; }
+  border-radius: 10px !important;
+}
 
 @media only screen and (max-width: 992px) {
   .h0 {
-    font-size: 45px !important; } }
+    font-size: 45px !important;
+  }
+}
 @media only screen and (max-width: 576px) {
   .h0 {
-    font-size: 35px !important; }
-
+    font-size: 35px !important;
+  }
   .main-content p {
-    font-size: 2vh !important; }
-
+    font-size: 2vh !important;
+  }
   .row > * {
     padding-right: 0 !important;
-    padding-left: 0 !important; }
-
+    padding-left: 0 !important;
+  }
   footer {
-    text-align: center; } }
+    text-align: center;
+  }
+}
 /* Navbar Font */
 table {
   width: 100%;
   border-radius: 5px;
-  border-width: 1px; }
+  border-width: 1px;
+}
 
 tr {
-  background-color: black !important; }
+  background-color: black !important;
+}
 
 .emailTrigger {
-  font-size: 18px; }
-
-/*# sourceMappingURL=contact.css.map */
+  font-size: 18px;
+}/*# sourceMappingURL=contact.css.map */

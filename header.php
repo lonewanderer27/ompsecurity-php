@@ -4,8 +4,7 @@ $template_directory = bloginfo('template_directory');
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
     <?php if (is_404()) : ?>
     Page Not Found

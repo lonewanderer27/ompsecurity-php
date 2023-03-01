@@ -8,7 +8,7 @@
     $first_img = $matches [1] [0];
   
     if(empty($first_img)){ // Defines a default image
-      $first_img = bloginfo('template_directory') . "/assets/announcements/preview.jpg";
+      $first_img = bloginfo('template_directory') . "/assets/images/announcements/preview.jpg";
     }
     return $first_img;
   }

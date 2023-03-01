@@ -75,14 +75,6 @@ function Omp_Register_styles()
         '1.0',
         'all'
     );
-    
-    wp_enqueue_style(
-        'google-fonts',
-        'https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap',
-        array(),
-        '1.0',
-        'all'
-    );
 
     if (is_front_page() or is_404()) {
         wp_enqueue_style(
@@ -148,6 +140,14 @@ function Omp_Register_styles()
             '1.0',
             'all'
         );
+    } elseif (is_single()) {
+        wp_enqueue_style(
+            'ompsec_single',
+            get_template_directory_uri() . "/styles/single.css",
+            array('bootstrap-css'),
+            '1.0',
+            'all'
+        );
     }
 }
 
@@ -183,17 +183,5 @@ function Omp_Register_scripts()
     );
 }
 
-function Omp_Register_metacontent()
-{
-    // General
-    echo '<meta charset="utf-8" />';
-    echo '<meta name="viewport" content="width=device-width, initial-scale=1" />';
-
-    // Google Fonts
-    echo '<link rel="preconnect" href="https://fonts.googleapis.com" />';
-    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />';
-}
-
 add_action('wp_enqueue_scripts', 'Omp_Register_styles');
 add_action('wp_enqueue_scripts', 'Omp_Register_scripts');
-add_action('wp_head', 'Omp_Register_metacontent');

@@ -4,6 +4,7 @@ $the_query = new WP_Query(array(
     'category_name' => 'Announcements',     # get the posts from Announcements category
     'posts_per_page' => 3,                  # temporarily set the amount of posts per page to 3
 ));
+$template_dir = get_template_directory();
 ?>
 
 <?php if ($the_query->have_posts()) : ?>
@@ -22,7 +23,7 @@ $the_query = new WP_Query(array(
           <div id="announcementImage<?= $post_count ?>"
                class="w-100 h-auto"
                style="
-                  	background-image: url(<?php echo (has_post_thumbnail()) ? the_post_thumbnail('thumbnail') : get_post_image(); ?>);
+                  	background-image: url(<?= get_post_image() ?>);
 									">
           </div>
 
@@ -43,13 +44,13 @@ $the_query = new WP_Query(array(
                 Read More →
               </span>
               <br />
-            <p class="p fw-bold"><?= get_the_date(); ?> at
-              <?= the_time(); ?>
+            <p class="p fw-bold">
+              Posted <?= get_the_date(); ?> at <?= the_time(); ?>
             </p>
             <a type="button"
-               class="btn btn-light text-uppercase btn-lg mt-5"
-               href="announcements#all-announcements">
-              VIEW MORE ANNOUNCEMENTS
+                class="btn btn-outline-light text-uppercase btn-lg mt-5"
+                href="<?= the_permalink() ?>">
+              READ MORE
             </a>
             </p>
           </div>
@@ -75,6 +76,11 @@ $the_query = new WP_Query(array(
     </button>
     <?php endwhile; ?>
   </div>
+  <a type="button"
+      class="btn btn-light text-uppercase btn-lg mt-5"
+      href="announcements#all-announcements">
+    VIEW MORE ANNOUNCEMENTS
+  </a>
 </div>
 <?php endif; ?>
 <?php wp_reset_postdata(); // reset the amount of posts per to user settings?>

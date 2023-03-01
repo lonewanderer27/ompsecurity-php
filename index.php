@@ -34,7 +34,7 @@ get_header();
         <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
           <div class="card w-100">
             <div class="ratio ratio-16x9">
-              <img src="<?php echo (has_post_thumbnail()) ? the_post_thumbnail('thumbnail') : get_post_image(); ?>"
+              <img src="<?=get_post_image(); ?>"
                    class="card-img-top"
                    style="object-fit: cover" />
             </div>

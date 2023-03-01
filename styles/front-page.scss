@@ -3,6 +3,10 @@
 @import "mixins";
 
 .main-content {
+  #bigDescription,
+  #smallDescription {
+    text-align: center;
+  }
   p {
     font-size: 20px;
   }
@@ -48,11 +52,4 @@ section#our-services {
 
 section#contact {
   @include plain_bg();
-}
-
-.main-content {
-  #bigDescription,
-  #smallDescription {
-    text-align: center;
-  }
 }

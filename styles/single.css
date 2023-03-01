@@ -216,4 +216,7 @@ td > span {
     text-align: center;
   }
 }
-/* Navbar Font *//*# sourceMappingURL=service-delivery-and-operations.css.map */
+/* Navbar Font */
+main {
+  min-height: auto;
+}/*# sourceMappingURL=single.css.map */
